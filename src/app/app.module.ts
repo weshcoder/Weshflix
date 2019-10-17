@@ -8,6 +8,9 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchBoxComponent } from './navbar/search-bar/search-bar.component';
 import { MovieCardComponent } from './movies/movie-card.component';
+import { SearchService } from './services/search-bar.service';
+// import { MaterialModule } from './material/material.module';
+
 
 @NgModule({
   imports: [
@@ -17,15 +20,17 @@ import { MovieCardComponent } from './movies/movie-card.component';
       { path: 'Kids', component: MovieComponent },
       { path: '', redirectTo: 'Kids', pathMatch: 'full' },
       { path: '', loadChildren: () => import('./favourites/farouties.module').then(m => m.FavModule) }
-    ])
+    ]),
+    // MaterialModule
   ],
   declarations: [
     AppComponent,
     NavBarComponent,
     MovieComponent,
     SearchBoxComponent,
-    MovieCardComponent
+    MovieCardComponent,
   ],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

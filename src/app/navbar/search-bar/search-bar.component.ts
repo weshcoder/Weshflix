@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { SearchService } from 'src/app/services/search-bar.service';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -10,7 +11,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class SearchBoxComponent implements OnInit {
   @Output() query: EventEmitter<string> = new EventEmitter();
 
-  constructor() { }
+  constructor(private searchService: SearchService) { }
 
   ngOnInit() {
 
@@ -19,6 +20,6 @@ export class SearchBoxComponent implements OnInit {
     const {target: {value}} = event;
     this.query.emit(value);
     console.log(value);
-
+    this.searchService.search(value);
   }
 }

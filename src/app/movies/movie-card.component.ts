@@ -8,12 +8,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class MovieCardComponent implements OnInit {
-  @Input() imgUrl: string;
-  @Input() movieName: string;
 
   constructor() { }
+  @Input() imgUrl: string;
+  @Input() movieName: string;
+  @Input() rating: number;
+  @Input() releaseDate: Date;
+  @Input() description: string;
+  @Input() genre: string;
+
 
   ngOnInit() {
 
   }
+
 }
+

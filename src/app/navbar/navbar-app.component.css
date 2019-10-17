@@ -26,6 +26,10 @@
   padding: 0 6px;
 }
 
+.active {
+  font-weight: 600;
+}
+
 
 .search-btn {
   color: white;
@@ -66,6 +70,7 @@ li {
 
 li a{
   display: block;
+  font-weight: none;
   color: red;
   text-align: center;
   padding: 13px;

@@ -1,11 +1,11 @@
 <main>
 <div class="movies">
-    <h3 class="title">Tv Shows  &nbsp; &gt;</h3>
+    <h3 class="title">Comedy  &nbsp; &gt;</h3>
   <div class="row">
 
     <ul id="movies1" >
         <li *ngFor="let movie of movies">
-            <moviecard-app [imgUrl]="movie.imgUrl" [movieName]="movie.name"></moviecard-app>
+            <moviecard-app [genre]="movie.genre" [description]="movie.description" [releaseDate]="movie.releaseDate" [rating]='movie.rating' [imgUrl]="movie.imgUrl" [movieName]="movie.name"></moviecard-app>
         </li>
 
     </ul>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="movies2">
-    <h3 class="title">Comedy  &nbsp; &gt;</h3>
+    <h3 class="title">Drama  &nbsp; &gt;</h3>
   <div class="row">
     <ul id="movies1">
         <li>
