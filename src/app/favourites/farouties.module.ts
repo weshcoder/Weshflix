@@ -14,7 +14,10 @@ const routes: Routes = [
   declarations: [
     FavouriteComponent,
   ],
-  exports: [RouterModule],
+  exports: [
+    FavouriteComponent,
+    RouterModule
+  ],
 
   providers: [],
 })

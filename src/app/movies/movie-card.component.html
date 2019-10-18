@@ -1,7 +1,12 @@
 <div class="container">
 <img [src]="imgUrl" alt="Cinque Terre" hspace="2">
+<div class="details">
+  <p style="text-align: center;">
+    {{movieName}} | {{releaseDate | date}}
+  </p>
+</div>
   <div class="overlay">
-     <div class="text"><a href="" ><i class="far fa-heart"></i></a></div>
-    <div class="text2"><a href=""><i class="fas fa-arrow-circle-right"></i>View</a></div>
+     <!-- <favourites-app></favourites-app> -->
+     <dialog-image></dialog-image>
   </div>
 </div>

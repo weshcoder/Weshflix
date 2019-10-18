@@ -8,20 +8,24 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchBoxComponent } from './navbar/search-bar/search-bar.component';
 import { MovieCardComponent } from './movies/movie-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { SearchService } from './services/search-bar.service';
-// import { MaterialModule } from './material/material.module';
+import { MovieDetailsComponent } from './movie-dialog/movie-details-dialog.component';
+import { FavModule } from './favourites/farouties.module';
 
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FavModule,
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'Kids', component: MovieComponent },
       { path: '', redirectTo: 'Kids', pathMatch: 'full' },
       { path: '', loadChildren: () => import('./favourites/farouties.module').then(m => m.FavModule) }
     ]),
-    // MaterialModule
   ],
   declarations: [
     AppComponent,
@@ -29,7 +33,8 @@ import { SearchService } from './services/search-bar.service';
     MovieComponent,
     SearchBoxComponent,
     MovieCardComponent,
-  ],
+    MovieDetailsComponent,
+],
   providers: [SearchService],
   bootstrap: [AppComponent]
 })

@@ -1,21 +1,11 @@
-// import { Component } from '@angular/core';
-// import { MatDialog } from '@angular/material/dialog';
-// import { MovieCardComponent } from '../movies/movie-card.component';
+import { Component } from '@angular/core';
 
+@Component({
+  // tslint:disable-next-line: component-selector
+  selector: 'dialog-image',
+  templateUrl: 'movie-details.component.html',
+  styleUrls: ['movie-details.component.css']
+})
 
-// @Component({
-//   // tslint:disable-next-line: component-selector
-//   selector: 'dialog-image',
-//   templateUrl: 'movie-details.component.html'
-// })
-
-// export class MovieDetailsComponent {
-//   constructor(public dialog: MatDialog) { }
-
-//   openDialog(): void {
-//      this.dialog.open(MovieCardComponent, {
-//       width: '500px',
-//       height: '200px',
-//     });
-//   }
-// }
+export class MovieDetailsComponent {
+}
