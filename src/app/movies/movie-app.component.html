@@ -4,8 +4,8 @@
   <div class="row">
 
     <ul id="movies1" >
-        <li *ngFor="let movie of movies">
-            <moviecard-app [genre]="movie.genre" [description]="movie.description" [releaseDate]="movie.releaseDate" [rating]='movie.rating' [imgUrl]="movie.imgUrl" [movieName]="movie.name"></moviecard-app>
+        <li *ngFor="let movie of filteredMovies">
+            <moviecard-app *ngIf="movie?.genre=='Comedy'" [genre]="movie?.genre" [description]="movie?.description" [releaseDate]="movie?.releaseDate" [rating]='movie?.rating' [imgUrl]="movie?.imgUrl" [movieName]="movie?.name"></moviecard-app>
         </li>
 
     </ul>
@@ -16,51 +16,9 @@
     <h3 class="title">Drama  &nbsp; &gt;</h3>
   <div class="row">
     <ul id="movies1">
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-6.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-6.png" alt="Cinque Terre" width="350" height="200">
-                <div ><a href="">Add To Favourite &nbsp;<i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-7.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-7.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a href=""><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-8.png" alt="Cinque Terre" hspace='2'>
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-8.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a href=""><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-9.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-9.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a href=""><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-10.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-10.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a href=""><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
+      <li *ngFor="let movie of filteredMovies">
+        <moviecard-app  *ngIf="movie?.genre=='Drama'" [genre]="movie?.genre" [description]="movie?.description" [releaseDate]="movie?.releaseDate" [rating]='movie?.rating' [imgUrl]="movie?.imgUrl" [movieName]="movie?.name"></moviecard-app>
+    </li>
     </ul>
   </div>
 </div>
@@ -69,52 +27,9 @@
     <h3 class="title">Action &nbsp; &gt;</h3>
   <div class="row">
     <ul id="movies1">
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-11.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-11.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-        </li>
-        <li>
-            <div class="dropdown">
-                <img src="../../assets/images/movies-12.png" alt="Cinque Terre" hspace="2">
-                <div class="dropdown-content">
-                <img src="../../assets/images/movies-12.png" alt="Cinque Terre" width="300" height="200">
-                <div class="desc">Add To Favourite &nbsp;<a><i class="fas fa-heart"></i></a></div>
-                </div>
-              </div>
-            </li>
-       <li>
-          <div class="dropdown">
-              <img src="../../assets/images/movies-13.png" alt="Cinque Terre" hspace="2">
-              <div class="dropdown-content">
-              <img src="../../assets/images/movies-13.png" alt="Cinque Terre" width="300" height="200">
-              <div class="desc">Add To Favourite &nbsp;<a><i class="fas fa-heart"></i></a></div>
-              </div>
-            </div>
-      </li>
-       <li>
-          <div class="dropdown">
-              <img src="../../assets/images/movies-14.png" alt="Cinque Terre" hspace="2">
-              <div class="dropdown-content">
-              <img src="../../assets/images/movies-14.png" alt="Cinque Terre" width="300" height="200">
-              <div class="desc">Add To Favourite &nbsp;<a><i class="fas fa-heart"></i></a></div>
-              </div>
-            </div>
-      </li>
-
-      <li>
-          <div class="dropdown">
-              <img src="../../assets/images/movies-15.png" alt="Cinque Terre" hspace="2">
-              <div class="dropdown-content">
-              <img src="../../assets/images/movies-15.png" alt="Cinque Terre" width="300" height="200">
-              <div class="desc">Add To Favourite &nbsp;<a><i class="fas fa-heart"></i></a></div>
-              </div>
-            </div>
-      </li>
+      <li *ngFor="let movie of filteredMovies">
+        <moviecard-app  *ngIf="movie?.genre=='Action'" [genre]="movie?.genre" [description]="movie?.description" [releaseDate]="movie?.releaseDate" [rating]='movie?.rating' [imgUrl]="movie?.imgUrl" [movieName]="movie?.name"></moviecard-app>
+    </li>
     </ul>
   </div>
 </div>

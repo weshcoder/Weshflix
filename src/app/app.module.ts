@@ -11,9 +11,9 @@ import { MovieCardComponent } from './movies/movie-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SearchService } from './services/search-bar.service';
-import { MovieDetailsComponent } from './movie-dialog/movie-details-dialog.component';
 import { FavModule } from './favourites/farouties.module';
-
+// import { MaterialModule } from './material/material.module';
+import { MovieDialogComponent } from './material/movie-dialog/movie-dialog.component'
 
 @NgModule({
   imports: [
@@ -26,6 +26,7 @@ import { FavModule } from './favourites/farouties.module';
       { path: '', redirectTo: 'Kids', pathMatch: 'full' },
       { path: '', loadChildren: () => import('./favourites/farouties.module').then(m => m.FavModule) }
     ]),
+    // MaterialModule
   ],
   declarations: [
     AppComponent,
@@ -33,7 +34,7 @@ import { FavModule } from './favourites/farouties.module';
     MovieComponent,
     SearchBoxComponent,
     MovieCardComponent,
-    MovieDetailsComponent,
+    MovieDialogComponent
 ],
   providers: [SearchService],
   bootstrap: [AppComponent]

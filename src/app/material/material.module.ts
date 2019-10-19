@@ -2,10 +2,10 @@
 // import {MatDialogModule} from '@angular/material';
 
 
-// /**
-//  * NgModule that includes all Material modules.
-// */
 // @NgModule({
+//   imports: [
+//       MatDialogModule
+//   ],
 //   exports: [
 //     MatDialogModule
 //   ]
