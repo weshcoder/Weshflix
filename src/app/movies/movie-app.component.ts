@@ -17,12 +17,13 @@ export class MovieComponent implements OnDestroy, OnInit {
   constructor(private searchService: SearchService) {
     this.subscription = this.searchService.getSearchValue().subscribe(searchValue => {
       const filteredMovies = this.movies.map( movie => {
-        if (filteredMovies.includes(searchValue)) {
+        if (movie.name.includes(searchValue)) {
           console.log(movie);
+          this.movies = movie;
           return movie;
         }
       });
-      this.movies = filteredMovies;
+      console.log(filteredMovies);
     });
    }
 
