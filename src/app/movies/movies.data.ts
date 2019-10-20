@@ -194,7 +194,8 @@ export const MovieData = [
     widower Jake Russell and his two children. After a series of bizarre occurrences,
     opinions towards the newcomer are divided,
     with some believing her to be a nuisance but others suspecting her of being something else entirely.`
-  },  {
+  },
+   {
     name: 'Glitter Force',
     imgUrl: '/assets/images/movies-15.png',
     releaseDate: '28 February 2019',
@@ -208,4 +209,78 @@ export const MovieData = [
     opinions towards the newcomer are divided,
     with some believing her to be a nuisance but others suspecting her of being something else entirely.`
   },
+  {
+    name: 'Minecraft StoryMode',
+    imgUrl: '/assets/images/movies-16.png',
+    releaseDate: '28 February 2019',
+    genre: 'Monsters',
+    rating: '7+',
+    language: 'Eng',
+    description:
+    `When the mysterious Cassandra Nightingale moves into a supposedly haunted house
+    in the suburban town of Middleton, she causes a stir among the locals - especially
+    widower Jake Russell and his two children. After a series of bizarre occurrences,
+    opinions towards the newcomer are divided,
+    with some believing her to be a nuisance but others suspecting her of being something else entirely.`
+  },
+  {
+    name: 'Pokemon:sun & moon',
+    imgUrl: '/assets/images/movies-17.png',
+    releaseDate: '28 February 2019',
+    genre: 'Monsters',
+    rating: '7+',
+    language: 'Eng',
+    description:
+    `When the mysterious Cassandra Nightingale moves into a supposedly haunted house
+    in the suburban town of Middleton, she causes a stir among the locals - especially
+    widower Jake Russell and his two children. After a series of bizarre occurrences,
+    opinions towards the newcomer are divided,
+    with some believing her to be a nuisance but others suspecting her of being something else entirely.`
+  },
+  {
+    name: 'Monsters Island',
+    imgUrl: '/assets/images/movies-18.png',
+    releaseDate: '28 February 2019',
+    genre: 'Monsters',
+    rating: '7+',
+    language: 'Eng',
+    description:
+    `When the mysterious Cassandra Nightingale moves into a supposedly haunted house
+    in the suburban town of Middleton, she causes a stir among the locals - especially
+    widower Jake Russell and his two children. After a series of bizarre occurrences,
+    opinions towards the newcomer are divided,
+    with some believing her to be a nuisance but others suspecting her of being something else entirely.`
+  },
+  {
+    name: 'Shark Tale',
+    imgUrl: '/assets/images/movies-19.png',
+    releaseDate: '28 February 2019',
+    genre: 'Monsters',
+    rating: '7+',
+    language: 'Eng',
+    description:
+    `When the mysterious Cassandra Nightingale moves into a supposedly haunted house
+    in the suburban town of Middleton, she causes a stir among the locals - especially
+    widower Jake Russell and his two children. After a series of bizarre occurrences,
+    opinions towards the newcomer are divided,
+    with some believing her to be a nuisance but others suspecting her of being something else entirely.`
+  },
+  {
+    name: 'Hotel translayvania',
+    imgUrl: '/assets/images/movies-20.png',
+    releaseDate: '28 February 2019',
+    genre: 'Monsters',
+    rating: '7+',
+    language: 'Eng',
+    description:
+    `When the mysterious Cassandra Nightingale moves into a supposedly haunted house
+    in the suburban town of Middleton, she causes a stir among the locals - especially
+    widower Jake Russell and his two children. After a series of bizarre occurrences,
+    opinions towards the newcomer are divided,
+    with some believing her to be a nuisance but others suspecting her of being something else entirely.`
+  },
+
+
+
+
 ]
