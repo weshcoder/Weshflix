@@ -19,6 +19,7 @@ export class MovieCardComponent implements OnInit {
   @Input() description: string;
   @Input() genre: string;
   @Input() displayFavourite = true;
+  @Input() noFavourites = 'You have no favourite movies';
   favourite = 'favorite_border'  ;
 
 
@@ -42,6 +43,7 @@ export class MovieCardComponent implements OnInit {
     };
     if (this.favourite === 'favorite_border') {
      this.favourite = 'favorite';
+     this.noFavourites = '';
      sessionStorage.setItem(this.movieName, JSON.stringify(movie));
     } else {
       this.favourite = 'favorite_border';

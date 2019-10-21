@@ -1,17 +1,24 @@
+<p *ngIf="!movies.push()" style="text-align: center; font-size: 40px;">You have no favourite movies</p>
+<div class="container">
 <div class="movies">
 <div class="row">
 
+
   <ul id="movies1" >
-      <li *ngFor="let movie of movies">
+
+      <li style="display: inline-block; position: relative; left: 3.4%;" *ngFor="let movie of movies">
+
           <moviecard-app
           [genre]="movie?.genre" [description]="movie?.description"
           [releaseDate]="movie?.releaseDate"
           [displayFavourite]="false"
           [rating]='movie?.rating' [imgUrl]="movie?.imgUrl"
-          [movieName]="movie?.name"></moviecard-app>
+          [movieName]="movie?.name"
+          ></moviecard-app>
       </li>
 
   </ul>
+</div>
 </div>
 </div>
 

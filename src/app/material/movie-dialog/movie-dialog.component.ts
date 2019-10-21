@@ -12,7 +12,7 @@ export class MovieDialogComponent implements OnInit {
   description: string;
   rating: number;
   genre: string;
-  director: string;
+  releaseDate: Date;
   // movieCard: MovieCardComponent = new MovieCardComponent(MatDial);
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 
@@ -24,6 +24,6 @@ export class MovieDialogComponent implements OnInit {
     this.description = description;
     this.rating = rating;
     this.genre = genre;
-    this.director = director;
+    this.releaseDate = releaseDate;
   }
 }
