@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  width: 19.5%;
+  display: inline-block;
+}
+
+.router-link-active {
+  color: red
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.far {
+  color: red;
+}
+
+.open-dialog {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.details
+ {
+  background: #F9F9F3;
+  /* border: 1px dashed red; */
+  /* margin-top: -20px; */
+ }
+
+.add-favourite {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  cursor: pointer;
+  color: red;
+}

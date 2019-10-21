@@ -1,0 +1,17 @@
+<div class="movies">
+<div class="row">
+
+  <ul id="movies1" >
+      <li *ngFor="let movie of movies">
+          <moviecard-app
+          [genre]="movie?.genre" [description]="movie?.description"
+          [releaseDate]="movie?.releaseDate"
+          [displayFavourite]="false"
+          [rating]='movie?.rating' [imgUrl]="movie?.imgUrl"
+          [movieName]="movie?.name"></moviecard-app>
+      </li>
+
+  </ul>
+</div>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="container">
+<img [src]="imgUrl" hspace="2">
+<div class="details">
+  <p style="text-align: center;">
+    <!-- {{movieName}} | {{releaseDate | date}} -->
+  </p>
+</div>
+  <div class="overlay">
+    <a class="add-favourite" (click)="addFavourite()"  *ngIf="displayFavourite"><i class="material-icons">{{favourite}}</i></a>
+     <a class="open-dialog" (click)="openDialog(this)">View</a>
+  </div>
+</div>

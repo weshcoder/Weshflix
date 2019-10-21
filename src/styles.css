@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+nav {
+  color: #4d4d4d;
+}
+
+.hover:hover {
+  color: red;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  background-color: red;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

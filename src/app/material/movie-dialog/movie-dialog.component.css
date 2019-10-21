@@ -1,0 +1,23 @@
+.img {
+  position: static;
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+  float: left;
+}
+
+.rating {
+  border: 1px solid slategray;
+  float: left;
+  border-radius: 2px;
+  background: red;
+}
+
+.description {
+  background: #cdcdcd;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 35px;
+}

@@ -1,0 +1,38 @@
+
+.search-box {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  /* padding: 10px; */
+}
+
+.search-box:hover > .search-txt {
+  width: 200px;
+  padding: 0 6px;
+}
+
+
+.search-btn{
+  color: #000;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.search-txt {
+  border: 2px solid #000000;
+  background: #ffffff;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #000;
+  font-size: 16px;
+  transition: .4s;
+  line-height: 40px;
+  width: 0;
+  height: 30px;
+}

@@ -1,0 +1,11 @@
+<header>
+  <nav>
+    <a class="logo">WESHFLIX</a>
+    <ul class="nav">
+      <li><a [routerLink]="['/Kids']"  routerLinkActive="active">Kids</a></li>
+      <li><a [routerLink]="['/favs']" routerLinkActive="active"><i class="far fa-heart"></i> Favourites</a><li>
+      <searchbox-app (query)="queryValue($event)"></searchbox-app>
+    </ul>
+  </nav>
+
+</header>
