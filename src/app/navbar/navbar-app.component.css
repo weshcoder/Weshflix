@@ -1,11 +1,10 @@
 
 .logo {
-  padding: 0 4%;
-  margin-top: .42%;
-  font-size: 1.9em;
-  font-weight: bold;
-  color: red;
-  text-decoration: none;
+  width: 140px;
+  height: 60px;
+  margin-top: 32px;
+  margin-left: 50px;
+  margin-right: 20px;
   float: left;
 }
 
